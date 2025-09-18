@@ -1,10 +1,10 @@
 import { unstable_noStore as noStore}  from 'next/cache';
-//import { fetchManagementGroups } from './lib/data';
+import { fetchManagementGroups } from './lib/data';
 
 export default async function Home() {
   noStore();
 
-  //const managementGroups = await fetchManagementGroups();
+  const managementGroups = await fetchManagementGroups();
   //console.log(managementGroups);
 
   const timeOnServer = new Date().toLocaleTimeString('en-US');
