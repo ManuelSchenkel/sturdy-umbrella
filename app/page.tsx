@@ -4,7 +4,7 @@ import { fetchManagementGroups } from './lib/data';
 export default async function Home() {
   noStore();
 
-  const managementGroups = await fetchManagementGroups();
+  const data = await fetchManagementGroups();
   //console.log(managementGroups);
 
   const timeOnServer = new Date().toLocaleTimeString('en-US');
