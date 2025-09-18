@@ -17,6 +17,9 @@ export default async function Home() {
       <div>
         DB: {process.env.DB_DATABASE}
       </div>
+      <div>
+        {data[0].Id}
+      </div>
     </main>
   );
 }
