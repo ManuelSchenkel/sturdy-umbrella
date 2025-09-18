@@ -1,6 +1,6 @@
 import postgres from 'postgres';
 
-const sql = postgres('postgres://username:password@host:port/database',{ 
+const sql = postgres({ 
     ssl: 'require',
     host: process.env.DB_HOST,
     port: 5432,
