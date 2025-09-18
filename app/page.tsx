@@ -18,7 +18,7 @@ export default async function Home() {
         DB: {process.env.DB_DATABASE}
       </div>
       <div>
-        {data[0].Id}
+        {JSON.stringify(data)}
       </div>
     </main>
   );
