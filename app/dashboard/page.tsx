@@ -13,6 +13,7 @@ export default async function Dashboard() {
                     {group.name}
                 </div>
             ))}
+            <div>Server Time: {timeOnServer}</div>
         </div>
     )
 }
