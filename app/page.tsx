@@ -5,10 +5,9 @@ export default async function Home() {
   noStore();
 
   const data = await fetchManagementGroups();
-  //console.log(managementGroups);
-
+  
   const timeOnServer = new Date().toLocaleTimeString('en-US');
-  console.log("hellooo2");
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>
@@ -18,7 +17,6 @@ export default async function Home() {
         DB: {process.env.DB_DATABASE}
       </div>
       <div>
-        {JSON.stringify(data)}
       </div>
     </main>
   );
